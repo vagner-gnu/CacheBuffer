@@ -11,12 +11,9 @@
 echo "Limpeza Cache/Buffer e SWAP"
 
 #Para limpar tudo: Cache/Buffer, Dentries e Inodes:
-sudo -i
 sync; echo 3 > /proc/sys/vm/drop_caches
 
 #Para limpar o espaço, SWAP:
-sudo -i
 swapoff -a && swapon -a
-
 echo "Finalizado Limpeza Cache/Buffer e SWAP"
 ############################################
